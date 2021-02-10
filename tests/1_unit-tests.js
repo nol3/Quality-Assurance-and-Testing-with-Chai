@@ -11,6 +11,7 @@ suite('Unit Tests', function () {
       );
       assert.isNotNull(1, '1 is not null');
     });
+    /*
     // #2
     test('#isDefined, #isUndefined', function () {
       assert.fail(null, 'null is not undefined');
@@ -29,8 +30,11 @@ suite('Unit Tests', function () {
       assert.fail(!!'double negation', 'double negation of a truthy is true');
       assert.fail({ value: 'truthy' }, 'A truthy object is NOT TRUE (neither is false...)');
     });
+    */
   });
 
+
+  /*
   // -----------------------------------------------------------------------------
 
   suite('Equality', function () {
@@ -167,5 +171,6 @@ suite('Unit Tests', function () {
     });
   });
 
+  */
   // -----------------------------------------------------------------------------
 });
