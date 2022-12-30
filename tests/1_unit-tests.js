@@ -10,9 +10,9 @@ suite('Unit Tests', function () {
     });
     // #2
     test('#isDefined, #isUndefined', function () {
-      assert.fail(null, 'null is not undefined');
-      assert.fail(undefined, 'undefined IS undefined');
-      assert.fail('hello', 'a string is not undefined');
+      assert.isDefined(null, 'null is not undefined');
+      assert.isUndefined(undefined, 'undefined IS undefined');
+      assert.isDefined('hello', 'a string is not undefined');
     });
     // #3
     test('#isOk, #isNotOk', function () {
@@ -76,7 +76,7 @@ suite('Unit Tests', function () {
     // #10
     test('#approximately', function () {
       assert.approximately(weirdNumbers(0.7), 1, 0.5);
-      assert.approximately(weirdNumbers(0.5), 1, 0.8);
+      assert.approximately(weirdNumbers(0.2), 1, 0.8);
     });
   });
 
